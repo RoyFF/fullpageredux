@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import MultiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const Wrapper = () => {
-    return(
-        <MultiThemeProvider>
-            <App />
-        </MultiThemeProvider>
-    );
-};
+  return (<MuiThemeProvider>
+    <App />
+  </MuiThemeProvider>)
+}
 
 ReactDOM.render(<Wrapper />, document.getElementById('root'));
 registerServiceWorker();

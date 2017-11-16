@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+// import RaisedButton from 'material-ui/RaisedButton';
 import './App.css';
-import RaisedButton from 'material-ui/RaisedButton';
+import ProductGrid from './components/ProductGrid'
+import AccessoriesGrid from './components/AccessoriesGrid'
 
 class App extends Component {
   render() {
@@ -11,10 +13,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <RaisedButton>Ver</RaisedButton>
+        <div>
+          <p className="App-intro">
+          </p>
+        </div>
+        <div>
+          <ProductGrid />
+          <AccessoriesGrid />
+        </div>
       </div>
     );
   }
