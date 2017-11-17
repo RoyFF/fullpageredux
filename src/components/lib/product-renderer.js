@@ -12,4 +12,4 @@ function productRenderer(products) {
   })
 }
 
-export default productRenderer
+export default productRenderer;
